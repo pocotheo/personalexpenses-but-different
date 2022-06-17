@@ -1,5 +1,8 @@
 # Personal Expenses app from Course, but changed with my own design
 
+Details:
+Users can add their expenses using the floating add button, which prompts them to select the category of their expenses and the amount they spent. The "bowl of liquid" fills according to the amount you have spent and your total budget.
+
 This is still in progress, I have to change the animation percentage.
 
 

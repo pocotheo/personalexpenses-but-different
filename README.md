@@ -1,16 +1,9 @@
-# personalexp
+# Personal Expenses app from Course, but changed with my own design
 
-A new Flutter project.
+Details:
+Users can add their expenses using the floating add button, which prompts them to select the category of their expenses and the amount they spent. The "bowl of liquid" fills according to the amount you have spent and your total budget.
 
-## Getting Started
+This is still in progress, I have to change the animation percentage.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="299" alt="Screenshot 2022-06-17 at 15 45 36" src="https://user-images.githubusercontent.com/59797717/174302133-4d423834-1588-4d28-b7fc-52c411976951.png">

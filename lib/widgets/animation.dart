@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
-import 'package:flutter/widgets.dart';
 import '../models/circle_clipper.dart';
 import '../models/wave_painter.dart';
 

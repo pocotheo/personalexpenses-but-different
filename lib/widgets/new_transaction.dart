@@ -105,7 +105,12 @@ class _NewTransactionState extends State<NewTransaction> {
                   )
                 ],
               ),
-              TextButton(child: Text('Add'), onPressed: submitData)
+              TextButton(
+                  child: Text(
+                    'Add',
+                    style: TextStyle(color: Colors.teal, fontSize: 25),
+                  ),
+                  onPressed: submitData)
             ],
           ),
         ));

@@ -26,8 +26,13 @@ class _MyHomePageState extends State<MyHomePage> {
   final List<Transaction> _userTransactions = [];
   num sum = 0;
   num budget = 300;
+  num percentageOfAnimation = 0;
+  num percentage = 0;
+
   void _addNewTransaction(category, amount) {
     sum += amount;
+    percentageOfAnimation = (sum / budget) * 100;
+    percentage = ((sum / budget) * 100).toInt();
     final newTransaction = Transaction(
         id: DateTime.now().toString(),
         title: category,
@@ -37,7 +42,6 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _userTransactions.add(newTransaction);
     });
-    print(sum);
   }
 
   void _startAddNewTransaction(BuildContext ctx) {
@@ -67,7 +71,10 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Animation1(x: sum / budget),
+            Animation1(
+              x: percentageOfAnimation,
+              percentage: percentage,
+            ),
             /* Container(
               child: Text(
                 'Transactions',

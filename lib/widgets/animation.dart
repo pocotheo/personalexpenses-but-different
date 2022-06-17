@@ -6,7 +6,8 @@ import '../models/wave_painter.dart';
 
 class Animation1 extends StatefulWidget {
   final num x;
-  Animation1({required this.x});
+  final num percentage;
+  Animation1({required this.x, required this.percentage});
   @override
   State<Animation1> createState() => _Animation1State();
 }
@@ -87,7 +88,7 @@ class _Animation1State extends State<Animation1> with TickerProviderStateMixin {
                 ),
               ),
               Positioned(
-                child: Text('55%',
+                child: Text('${widget.percentage} %',
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
